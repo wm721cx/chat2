@@ -1,0 +1,30 @@
+{
+  "name": "chat-web-app",
+  "version": "1.0.0",
+  "description": "A simple chat application web interface.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build step not defined'",
+    "test": "echo 'Test step not defined'"
+  },
+  "keywords": [
+    "chat",
+    "web",
+    "application"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/chat-web-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/chat-web-app/issues"
+  },
+  "homepage": "https://github.com/yourusername/chat-web-app#readme"
+}

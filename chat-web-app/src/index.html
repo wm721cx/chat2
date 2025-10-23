@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق المحادثة</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>مرحبًا بكم في تطبيق المحادثة</h1>
+    </header>
+    <main>
+        <section id="chat">
+            <h2>الدردشة</h2>
+            <div id="messages"></div>
+            <div id="chat-buttons">
+                <!-- تضمين أزرار المحادثة -->
+                <div id="buttons-container"></div>
+            </div>
+        </section>
+    </main>
+    <script src="scripts/main.js"></script>
+    <script>
+        // تحميل أزرار المحادثة
+        fetch('components/chat-buttons.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('buttons-container').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
